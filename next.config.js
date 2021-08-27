@@ -3,14 +3,14 @@ const withReactStorefront = require('react-storefront/plugins/withReactStorefron
 require('dotenv').config()
 
 module.exports = withReactStorefront({
-  target: 'serverless',
-  connector: 'react-storefront/mock-connector',
-  webpack: config => {
-    config.plugins.push(
-      new webpack.optimize.LimitChunkCountPlugin({
-        maxChunks: 1,
-      })
-    )
-    return config
-  },
+    target: 'serverless',
+    connector: 'react-storefront/commercetools-reactstorefront-connector',
+    webpack: config => {
+        config.plugins.push(
+            new webpack.optimize.LimitChunkCountPlugin({
+                maxChunks: 1,
+            })
+        )
+        return config
+    },
 })
