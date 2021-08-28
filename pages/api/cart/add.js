@@ -1,14 +1,14 @@
-import { addToCart } from 'react-storefront-connector'
+import { addToCart } from '../../commercetools-connector'
 
 async function handler(req, res) {
-  const result = await addToCart(req.body, req, res)
-  res.json(result)
+    const result = await addToCart(req.body, req, res)
+    res.json(result)
 }
 
 export const config = {
-  api: {
-    bodyParser: true,
-  },
+    api: {
+        bodyParser: true,
+    },
 }
 
 export default handler

@@ -1,1 +1,2 @@
-export { search as default } from 'react-storefront-connector'
+export { search as default }
+from '../../commercetools-connector'

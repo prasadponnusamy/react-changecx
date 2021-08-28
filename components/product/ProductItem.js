@@ -52,10 +52,7 @@ function ProductItem({ product, index, classes, className, colorSelector }) {
             <a>
               <Image
                 className={classes.thumbnail}
-                src={
-                  (store.color && store.color.media.thumbnail.src) ||
-                  (store.thumbnail && store.thumbnail.src)
-                }
+                src="http://pesmcopt.com/admin-media/images/dummy-product-image.jpg"
                 alt={
                   (store.color && store.color.media.thumbnail.alt) ||
                   (store.thumbnail && store.thumbnail.alt)
